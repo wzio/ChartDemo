@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         chartView.drawValueAboveBarEnabled = false
 
         chartView.maxVisibleCount = 60
-
+        let render = (chartView.renderer as? BarChartRenderer)
+        render?.roundedCorners = [.bottomLeft, .bottomRight]
         let xAxis = chartView.xAxis
         xAxis.labelPosition = .bottom
         xAxis.labelFont = .systemFont(ofSize: 10)
@@ -45,7 +46,7 @@ class ViewController: UIViewController {
         rightAxis.axisMinimum = 0
 
         setDataCount(6, range: 100)
-
+        
         /// a trick for offseted x grid line
         for i in (1..<9) {
             let line = ChartLimitLine(limit: Double(i)-0.4)

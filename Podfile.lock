@@ -4,15 +4,21 @@ PODS:
   - Charts/Core (3.6.0)
 
 DEPENDENCIES:
-  - Charts
+  - Charts (from `https://github.com/wzio/Charts`, branch `roundcorner`)
 
-SPEC REPOS:
-  trunk:
-    - Charts
+EXTERNAL SOURCES:
+  Charts:
+    :branch: roundcorner
+    :git: https://github.com/wzio/Charts
+
+CHECKOUT OPTIONS:
+  Charts:
+    :commit: ccebfa5476de217a6c91838e9e9b5b365ccbd087
+    :git: https://github.com/wzio/Charts
 
 SPEC CHECKSUMS:
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
 
-PODFILE CHECKSUM: 85ed5e5299acbc6a13e24295ece60049dadf9a25
+PODFILE CHECKSUM: ef6d72f892be3acabb03cfb88644bebbe1b9e18b
 
 COCOAPODS: 1.11.2
